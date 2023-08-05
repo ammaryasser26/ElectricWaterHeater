@@ -1,0 +1,41 @@
+1) 2 button up down 
+
+the button func up or down change the degree for ( 5 degree) .
+
+we have const val for temperature 
+1) max temp = 75 
+2) min temp = 35
+3) init temp= 60  ---> for EEPROM
+4) take temp from user --> EEPROM
+
+2) in ON-off specification :
+
+1 ) button for on and off 
+2 ) on or off for all the system power --> i.e (display ,power to heater)
+i think --> ( we need ext interrupt ) . -->(in next upgrade)
+
+
+3) Specifications- temperature sensing
+
+reading the temp every 100 ms (by boling) 
+next upgrade --> (using timer interrupt) 
+
+we have two temp :
+1- state that be set --> ( from up or down button ) or ( ideal temp)
+2- the actual state of temp reading 
+
+NOTE : after reading 10 time and take the (avr) turn off or on -->60 off
+
+heating on if the temp less than the set temp by -5 deg			
+colling ON // //   //   greater than		//+5	//
+
+
+4)
+one led for heating :
+1 if heating blink every 1 sec 
+2 ifcooling led on with out blinking --> on 
+
+
+
+
+
